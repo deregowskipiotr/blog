@@ -48,22 +48,31 @@ body {
 .wrapper {
   display: flex;
   margin-left: 10px;
+  
 }
 
 .sidebar {
   flex: 1 0 0;
+  
+  
+  
 }
+
 
 .posts {
   flex: 2 0 0;
+  
 }
 
+
 .sidebar, .posts {
-  background: $color-light;
+  background-color:darkgray;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
+  border: 5px solid $color-dark;
   border-radius: 5px;
+  box-shadow: 0 0 8px black;
+  
 }
 
 /* Logo */
@@ -84,12 +93,21 @@ body {
   padding: 0;
   .active {
     font-weight: bold;
+    
   }
+}
+
+li a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+  
 }
 
 .list-horizontal {
   li {
     display: inline-block;
+    margin: 0 15px;
   }
 }
 
@@ -98,6 +116,9 @@ body {
 .authors {
   li {
     margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
   }
 }
 
@@ -107,11 +128,13 @@ body {
   display: none;
   &.active {
     display: block;
-  }
+    
+  } 
 }
 
 .post-author {
   font-style: italic;
+  
 }
 
 .post-tags {
@@ -119,4 +142,40 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+}
+.post-author a {
+  text-decoration: none;
+  font-weight: 900;
+}
+/*TAGS*/
+.tags li {
+  display: inline-block;
+}
+
+
+.tag-size-1 {
+  font-size: 20px;
+  font-style: italic;
+  color:black;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px black; 
+  
+}
+
+.tag-size-3 {
+  font-size: 30px;
+  font-style: italic;
+  color:darkorchid;
+  font-weight: bold;
+  padding-left: 40px;
+  text-shadow: 1px 1px 2px darkmagenta;
+}
+
+.tag-size-4 {
+  font-size: 60px;
+  font-style: italic;
+  color:blue;
+  opacity: 0,4;
+  text-shadow: 1px 1px 5px darkblue;
+  
 }
