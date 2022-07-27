@@ -153,6 +153,7 @@ function generateTags() {
       /* generate HTML of the link */
       const linkHTMLData = {id: articleTags, title: tag};
       const linkHTML = templates.tagLink(linkHTMLData);
+      console.log(linkHTML, linkHTMLData);
       /* add generated code to html variable */
       html = html + linkHTML;
       //console.log(html);  
@@ -235,6 +236,7 @@ function tagClickHandler(event) {
 function addClickListenersToTags(){
   /* find all links to tags */
   const allTagsLinks = document.querySelectorAll('a[href^="#tag-"]');
+  console.log(allTagsLinks);
   /* START LOOP: for each link */
   for(let allTagsLink of allTagsLinks){
     /* add tagClickHandler as event listener for that link */

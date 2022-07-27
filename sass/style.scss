@@ -53,7 +53,7 @@ h3 {
 
 }
 
-p{
+p {
   margin: 21px 11px;
   text-align: justify;
   
@@ -132,6 +132,7 @@ li a {
   li {
     display: inline-block;
     margin: 0 15px;
+    font-style: italic;
   }
 }
 
@@ -141,8 +142,9 @@ li a {
   li {
     margin-bottom: 12px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
+    font-style: italic;
   }
 }
 
@@ -178,7 +180,6 @@ li a {
 .tags li {
   display: inline-block;
 }
-
 
 .tag-size-1 {
   font-size: 20px;
